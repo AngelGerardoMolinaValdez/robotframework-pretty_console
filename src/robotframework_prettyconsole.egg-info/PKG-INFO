@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: robotframework-prettyconsole
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/AngelGerardoMolinaValdez/robotframework-pretty_console.git
+Author: Angel Gerardo Molina Valdez
+Author-email: angelgerardomolinavaldez@gmail.com
+Maintainer: Angel Gerardo Molina Valdez
+Maintainer-email: angelgerardomolinavaldez@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: Windows
+Requires-Python: >=3.7
