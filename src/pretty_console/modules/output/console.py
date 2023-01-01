@@ -182,3 +182,13 @@ def print_import_variables(name, attributes):
 
     print("Variables", decorator, name, "\n")
     
+
+def print_log_message(message):
+    if info.color:
+        decorator = colorama.Back.BLUE + "::" + colorama.Style.RESET_ALL
+    
+    else:
+        decorator = "::"
+
+    print(decorator, message['message'], '\n')
+    

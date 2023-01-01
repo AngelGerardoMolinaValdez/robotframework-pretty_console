@@ -48,14 +48,25 @@ class Listener:
         console.print_test_keyword_info(name, attributes)
 
 
-
-
     def library_import(self, name, attributes):
         console.print_import_library(name, attributes)
+
 
     def resource_import(self, name, attributes):
         console.print_import_resource(name, attributes)
 
+
     def variables_import(self, name, attributes):
         console.print_import_variables(name, attributes)
+    
+
+    def log_message(self, message):
+        try:
+            mensaje = message["message"]
+            expression = eval(mensaje)
+        except:
+            expression = message
+        
+        console.print_log_message(expression)
+
 
