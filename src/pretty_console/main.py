@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import robot
 import os
 import sys
@@ -12,7 +11,6 @@ class PrettyRobotConsole:
     def _set_path_project(self):
         project_basedir: str = os.path.dirname(__file__)
         self.project_basedir = project_basedir
-        
 
     def _get_args_execution(self) -> list[str]: 
         args : list = list(sys.argv)[1:]
@@ -25,13 +23,9 @@ class PrettyRobotConsole:
     def prettify(self, color = False) -> None:
         if color:
             info.color = True
-
         self._set_path_project()
         args = self._get_args_execution()
-        robot.run_cli(args, exit=False)
-        
-
-    
+        robot.run_cli(args, exit=False)        
 
 def prettify():
     PrettyRobotConsole().prettify()
